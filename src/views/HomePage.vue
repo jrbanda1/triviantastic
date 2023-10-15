@@ -16,7 +16,7 @@ onMounted(async () => {
     <template #logo>
       <img src="/logo.svg" alt="logo" />
     </template>
-    Trivia-ntastic
+    Trivia-tastic
   </BaseTitle>
   <div v-if="categories.length > 0" class="categories">
     <RouterLink
