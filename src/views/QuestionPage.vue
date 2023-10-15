@@ -36,10 +36,10 @@ onMounted(async () => {
     answer: question.value.correct_answer,
     points:
       question.value.difficulty === 'easy'
-        ? 1
+        ? 10
         : question.value.difficulty === 'medium'
-        ? 2
-        : 3,
+        ? 20
+        : 30,
   })
   question.value.incorrect_answers.map((answer) => {
     answers.value.push({
