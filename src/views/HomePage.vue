@@ -6,7 +6,7 @@ import BaseTitle from '@/components/BaseTitle.vue'
 const { categories, getCategories } = useAPI()
 
 onMounted(async () => {
-  await getCategories()
+  if (categories.value) await getCategories()
 })
 </script>
 
@@ -18,7 +18,7 @@ onMounted(async () => {
     </template>
     Trivia-tastic
   </BaseTitle>
-  <div v-if="categories.length > 0" class="categories">
+  <div v-if="categories" class="categories">
     <RouterLink
       v-for="category in categories"
       :key="category.id"
