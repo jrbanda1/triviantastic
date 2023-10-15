@@ -8,7 +8,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="notification" :class="props.correct ? 'bg-green-500' : 'bg-red-500'">
+  <div
+    class="notification"
+    :class="props.correct ? 'bg-green-600' : 'bg-red-600'"
+  >
     {{ props.correct ? 'Correct' : 'Wrong' }}
   </div>
 </template>

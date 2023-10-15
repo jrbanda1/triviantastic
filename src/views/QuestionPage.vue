@@ -4,12 +4,12 @@ import { useRoute, useRouter } from 'vue-router'
 import { shuffle } from 'lodash-es'
 
 import NotificationAnswers from '@/components/NotificationAnswers.vue'
-
 import useAPI from '@/composables/useAPI'
 import useColor from '@/composables/useColor'
 import useScore from '@/composables/useScore'
 import BaseTitle from '@/components/BaseTitle.vue'
 import DifficultyChip from '@/components/DifficultyChip.vue'
+
 const route = useRoute()
 const router = useRouter()
 const colors = useColor()
