@@ -35,10 +35,10 @@ onMounted(async () => {
   @apply grid flex-grow grid-cols-4 gap-12;
 
   & .category {
-    @apply flex h-32 items-center justify-center rounded-lg bg-gradient-to-t from-red-200 to-red-600;
+    @apply flex h-32 items-center justify-center rounded-lg;
 
     &:hover {
-      @apply cursor-pointer border-red-500 bg-red-500 text-white;
+      @apply cursor-pointer bg-gradient-to-t from-red-200 to-red-600 text-white;
     }
   }
 }
