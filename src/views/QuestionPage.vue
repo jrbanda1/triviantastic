@@ -24,7 +24,7 @@ const handleAnswer = (points) => {
   showNotification.value = true
   setTimeout(() => {
     changeScore(points)
-    router.push('/')
+    router.push('/triviantastic/')
   }, 1000)
 }
 
